@@ -7,8 +7,8 @@
 #             FTP_UTILISATEUR    compte FTP créé dans cPanel
 #             FTP_MOT_DE_PASSE   son mot de passe
 #   Variable  FTP_DOSSIER        (facultatif) dossier du site vu par ce compte
-#                                FTP, ex. public_html/ — défaut ./ (compte FTP
-#                                limité au dossier du site, recommandé)
+#                                FTP, terminé par / — défaut public_html/ (le
+#                                compte FTP s'ouvre dans /home/<compte cPanel>/)
 # Voir README.md.
 name: Publier kontrolshop.com
 
@@ -58,7 +58,7 @@ jobs:
           SERVEUR: ${{ secrets.FTP_SERVEUR }}
           UTILISATEUR: ${{ secrets.FTP_UTILISATEUR }}
           MOT_DE_PASSE: ${{ secrets.FTP_MOT_DE_PASSE }}
-          DOSSIER: ${{ vars.FTP_DOSSIER || './' }}
+          DOSSIER: ${{ vars.FTP_DOSSIER || 'public_html/' }}
         run: |
           # Noms seulement. Si on y voit public_html, mail, etc., le compte
           # FTP s'ouvre à la racine du compte cPanel : régler FTP_DOSSIER.
@@ -77,7 +77,7 @@ jobs:
           password: ${{ secrets.FTP_MOT_DE_PASSE }}
           protocol: ftps
           local-dir: ./
-          server-dir: ${{ vars.FTP_DOSSIER || './' }}
+          server-dir: ${{ vars.FTP_DOSSIER || 'public_html/' }}
           dry-run: ${{ github.ref != 'refs/heads/main' }}
           log-level: verbose
           exclude: |

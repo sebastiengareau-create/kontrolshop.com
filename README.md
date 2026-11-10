@@ -51,9 +51,10 @@ fichiers changés. On peut aussi relancer à la main : GitHub → Actions →
      propagés
    - `FTP_UTILISATEUR` : le nom complet du compte (ex. `deploiement@kontrolshop.com`)
    - `FTP_MOT_DE_PASSE` : son mot de passe
-3. Si le compte FTP ne s'ouvre pas directement dans le dossier du site,
-   ajouter dans l'onglet **Variables** : `FTP_DOSSIER` = le chemin vers ce
-   dossier, terminé par `/` (ex. `public_html/`).
+3. Le site est envoyé dans `public_html/` du compte FTP (qui s'ouvre dans
+   `/home/<compte cPanel>/`). Si `kontrolshop.com` a une autre « Racine du
+   document » (cPanel → Domaines), ajouter dans l'onglet **Variables** :
+   `FTP_DOSSIER` = ce chemin vu depuis le compte FTP, terminé par `/`.
 4. **cPanel → SSL/TLS Status** : lancer AutoSSL pour `kontrolshop.com` et
    `www.kontrolshop.com` (certificat gratuit). `.htaccess` envoie tout vers
    `https://www.kontrolshop.com`.
