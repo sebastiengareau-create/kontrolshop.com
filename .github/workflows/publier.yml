@@ -52,22 +52,6 @@ jobs:
       - uses: actions/checkout@v4
         if: steps.acces.outputs.pret == 'oui'
 
-      - name: Voir le dossier de destination
-        if: steps.acces.outputs.pret == 'oui'
-        env:
-          SERVEUR: ${{ secrets.FTP_SERVEUR }}
-          UTILISATEUR: ${{ secrets.FTP_UTILISATEUR }}
-          MOT_DE_PASSE: ${{ secrets.FTP_MOT_DE_PASSE }}
-          DOSSIER: ${{ vars.FTP_DOSSIER || 'public_html/' }}
-        run: |
-          # Noms seulement. Si on y voit public_html, mail, etc., le compte
-          # FTP s'ouvre à la racine du compte cPanel : régler FTP_DOSSIER.
-          liste=$(curl -sS --ssl-reqd --list-only --user "$UTILISATEUR:$MOT_DE_PASSE" "ftp://$SERVEUR/${DOSSIER#./}") || true
-          echo "Contenu de la destination : $(echo "$liste" | tr '\r\n' '  ')"
-          if echo "$liste" | grep -qx 'public_html'; then
-            echo "::warning::La destination contient public_html : le site serait envoyé au mauvais endroit. Mettre la variable FTP_DOSSIER = public_html/ (voir README.md)."
-          fi
-
       - name: Envoyer le site
         if: steps.acces.outputs.pret == 'oui'
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
