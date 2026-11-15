@@ -5,7 +5,9 @@ un peu de JavaScript, sans dépendance ni compilation). À part de l'appli
 (dépôt `sgwebsite`) : il ne lit aucune base et ne touche à aucun client.
 
 ```
-index.html     la page (styles et script inclus)
+index.html     page d'accueil (onglets des déclinaisons, formulaire de démo)
+garage/ ferme/ copropriete/ vr/   une page par déclinaison (référencement)
+styles.css     style commun à toutes les pages
 img/           logos métal des déclinaisons (WebP), logo, icônes
 robots.txt, sitemap.xml
 .github/workflows/publier.yml   publication chez WHC
@@ -19,9 +21,16 @@ Ouvrir `index.html` dans le navigateur, tout simplement.
 ## Modifier
 
 - **Textes** : directement dans `index.html` (sections `#declinaisons`,
-  `#points-forts`, `#exemple`, `#questions`, `#contact`).
+  `#points-forts`, `#exemple`, `#questions`, `#contact`) et dans
+  `<déclinaison>/index.html`.
+- **Référencement** : chaque page a son `<title>`, sa description, son image
+  de partage (`img/og-*.jpg`, 1200×630) et ses données structurées
+  (`application/ld+json` : logiciel, fil d'Ariane, FAQ). Une nouvelle page
+  s'ajoute aussi à `sitemap.xml`. Garder la FAQ des données structurées
+  pareille au texte affiché.
+- **Démo présélectionnée** : `/?secteur=garage|ferme|copropriete|premium#contact`.
 - **Couleurs des déclinaisons** : variables `--garage`, `--ferme`, `--copro`,
-  `--premium` en haut du `<style>` — garder celles de `lib/marque.js`.
+  `--premium` en haut de `styles.css` — garder celles de `lib/marque.js`.
 - **Logos** : générés depuis `public/marque/kontrolshop-metal-<secteur>.png`
   du dépôt `sgwebsite` :
   `convert … -resize 820x -strip -quality 82 img/metal-<secteur>.webp`.
