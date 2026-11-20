@@ -1,6 +1,11 @@
 # Hébergement WHC (Apache, cPanel) — www.kontrolshop.com
 # HTTPS obligatoire et adresse avec « www » (certificat gratuit AutoSSL de cPanel).
 RewriteEngine On
+
+# Anciennes adresses (site d'avant, chez GoDaddy) → page équivalente, en un
+# seul saut, quelle que soit la variante (http, sans www)
+RewriteRule ^home/?$ https://www.kontrolshop.com/ [L,R=301,NC]
+
 RewriteCond %{HTTPS} off [OR]
 RewriteCond %{HTTP_HOST} ^kontrolshop\.com$ [NC]
 RewriteRule ^ https://www.kontrolshop.com%{REQUEST_URI} [L,R=301]
