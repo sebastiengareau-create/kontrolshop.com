@@ -6,7 +6,7 @@ un peu de JavaScript, sans dépendance ni compilation). À part de l'appli
 
 ```
 index.html     page d'accueil (onglets des déclinaisons, formulaire de démo)
-garage/ ferme/ copropriete/ vr/   une page par déclinaison (référencement)
+garage/ ferme/ copropriete/ immobilier/ vr/   une page par déclinaison (référencement)
 styles.css     style commun à toutes les pages
 img/           logos métal des déclinaisons (WebP), logo, icônes
 robots.txt, sitemap.xml
@@ -28,7 +28,7 @@ Ouvrir `index.html` dans le navigateur, tout simplement.
   (`application/ld+json` : logiciel, fil d'Ariane, FAQ). Une nouvelle page
   s'ajoute aussi à `sitemap.xml`. Garder la FAQ des données structurées
   pareille au texte affiché.
-- **Démo présélectionnée** : `/?secteur=garage|ferme|copropriete|premium#contact`.
+- **Démo présélectionnée** : `/?secteur=garage|ferme|copropriete|immobilier|premium#contact`.
 - **Couleurs des déclinaisons** : variables `--garage`, `--ferme`, `--copro`,
   `--premium` en haut de `styles.css` — garder celles de `lib/marque.js`.
 - **Logos** : générés depuis `public/marque/kontrolshop-metal-<secteur>.png`

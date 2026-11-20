@@ -1,7 +1,7 @@
 :root{
   --fond:#0f1216; --fond-2:#151a20; --carte:#1a2028; --carte-2:#202833;
   --ligne:#2a3340; --texte:#e9edf2; --doux:#a3adba; --pale:#77828f;
-  --garage:#e07338; --ferme:#4f9a43; --copro:#3b82d6; --premium:#c9a03a; --boutique:#c2416b;
+  --garage:#e07338; --ferme:#4f9a43; --copro:#3b82d6; --immo:#9a6fdb; --premium:#c9a03a; --boutique:#c2416b;
   --accent:var(--garage);
   --rayon:16px; --max:1180px;
 }
@@ -174,7 +174,7 @@ textarea{min-height:96px;resize:vertical}
 .inclus span{border:1px solid var(--ligne);border-radius:999px;padding:.45em 1em;color:var(--doux);font-size:.92rem;background:var(--carte)}
 .appel{text-align:center}
 .appel .intro{margin:0 auto 1.6em}
-.autres{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:28px}
+.autres{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:28px}
 .autres a{--c:var(--accent);text-align:left;display:flex;align-items:center;gap:14px;text-decoration:none;background:var(--carte);border:1px solid var(--ligne);border-left:4px solid var(--c);border-radius:12px;padding:16px 18px;transition:transform .15s,border-color .15s}
 .autres a:hover{transform:translateY(-2px);border-color:var(--c)}
 .autres b{display:block}

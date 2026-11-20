@@ -4,13 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Logiciel de gestion pour garages, fermes et copropriétés au Québec | kontrolshop</title>
-<meta name="description" content="kontrolshop : logiciel de gestion québécois pour garages, fermes d'élevage, copropriétés et ateliers de VR. Bons de travail, inventaire, facturation, paie et comptabilité (TPS/TVQ) au même endroit.">
+<meta name="description" content="kontrolshop : logiciel de gestion québécois pour garages, fermes d'élevage, copropriétés, immeubles locatifs et ateliers de VR. Bons de travail, inventaire, facturation, paie et comptabilité (TPS/TVQ) au même endroit.">
 <link rel="canonical" href="https://www.kontrolshop.com/">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="fr_CA">
 <meta property="og:site_name" content="kontrolshop">
 <meta property="og:title" content="kontrolshop — Tout est sous kontrol.">
-<meta property="og:description" content="Un logiciel de gestion québécois, quatre déclinaisons : Garage, Ferme, Copropriété et Premium (VR).">
+<meta property="og:description" content="Un logiciel de gestion québécois, cinq déclinaisons : Garage, Ferme, Copropriété, Immobilier et Premium (VR).">
 <meta property="og:image" content="https://www.kontrolshop.com/img/og-accueil.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -45,7 +45,7 @@
   "inLanguage": "fr-CA",
   "url": "https://www.kontrolshop.com/",
   "image": "https://www.kontrolshop.com/img/og-accueil.jpg",
-  "description": "Logiciel de gestion québécois : bons de travail, inventaire, facturation, paie et comptabilité, décliné pour les garages, les fermes d'élevage, les copropriétés et les ateliers de VR.",
+  "description": "Logiciel de gestion québécois : bons de travail, inventaire, facturation, paie et comptabilité, décliné pour les garages, les fermes d'élevage, les copropriétés, les immeubles locatifs et les ateliers de VR.",
   "publisher": {
    "@id": "https://www.kontrolshop.com/#org"
   }
@@ -122,7 +122,7 @@
     <div>
       <span class="surtitre">Logiciel de gestion d'entreprise conçu au Québec</span>
       <h1>Tout est sous <em>kontrol.</em></h1>
-      <p class="intro">Bons de travail, inventaire, facturation, paie et comptabilité réunis dans un seul logiciel — décliné pour votre métier. Que vous répariez des véhicules, éleviez du bétail ou gériez un immeuble, kontrolshop parle votre langage.</p>
+      <p class="intro">Bons de travail, inventaire, facturation, paie et comptabilité réunis dans un seul logiciel — décliné pour votre métier. Que vous répariez des véhicules, éleviez du bétail, gériez une copropriété ou louiez des logements, kontrolshop parle votre langage.</p>
       <div class="actions">
         <a class="btn btn-plein" href="#contact">Demander une démo</a>
         <a class="btn btn-contour" href="#declinaisons">Voir les déclinaisons</a>
@@ -131,6 +131,7 @@
         <a class="puce" style="--c:var(--garage)" href="#declinaisons" data-va="garage"><i></i>Garage</a>
         <a class="puce" style="--c:var(--ferme)" href="#declinaisons" data-va="ferme"><i></i>Ferme</a>
         <a class="puce" style="--c:var(--copro)" href="#declinaisons" data-va="copropriete"><i></i>Copropriété</a>
+        <a class="puce" style="--c:var(--immo)" href="#declinaisons" data-va="immobilier"><i></i>Immobilier</a>
         <a class="puce" style="--c:var(--premium)" href="#declinaisons" data-va="premium"><i></i>Premium</a>
       </div>
     </div>
@@ -142,7 +143,7 @@
 
 <div class="chiffres">
   <div class="conteneur">
-    <div class="chiffre"><strong>4</strong><span>déclinaisons prêtes, un seul logiciel</span></div>
+    <div class="chiffre"><strong>5</strong><span>déclinaisons prêtes, un seul logiciel</span></div>
     <div class="chiffre"><strong>1</strong><span>endroit pour l'atelier, le bureau et la comptabilité</span></div>
     <div class="chiffre"><strong>100&nbsp;%</strong><span>à votre image : votre logo sur vos documents</span></div>
     <div class="chiffre"><strong>TPS · TVQ</strong><span>taxes, paie et remises pensées pour le Québec</span></div>
@@ -159,6 +160,7 @@
       <button class="onglet" role="tab" id="t-garage" aria-controls="p-garage" aria-selected="true" style="--c:var(--garage)"><i></i>Garage</button>
       <button class="onglet" role="tab" id="t-ferme" aria-controls="p-ferme" aria-selected="false" tabindex="-1" style="--c:var(--ferme)"><i></i>Ferme</button>
       <button class="onglet" role="tab" id="t-copropriete" aria-controls="p-copropriete" aria-selected="false" tabindex="-1" style="--c:var(--copro)"><i></i>Copropriété</button>
+      <button class="onglet" role="tab" id="t-immobilier" aria-controls="p-immobilier" aria-selected="false" tabindex="-1" style="--c:var(--immo)"><i></i>Immobilier</button>
       <button class="onglet" role="tab" id="t-premium" aria-controls="p-premium" aria-selected="false" tabindex="-1" style="--c:var(--premium)"><i></i>Premium</button>
     </div>
 
@@ -214,6 +216,24 @@
         </ul>
         <div class="exemple"><strong>Exemple</strong>Un copropriétaire signale une infiltration d'eau depuis son portail, photo à l'appui. Le gestionnaire crée le bon pour le couvreur ; le copropriétaire voit la progression sans téléphoner.</div>
         <a class="en-savoir" href="/copropriete/">Tout sur kontrolshop Copropriété →</a>
+      </div>
+    </article>
+
+    <article class="panneau" role="tabpanel" id="p-immobilier" aria-labelledby="t-immobilier" style="--c:var(--immo)">
+      <div class="logo-secteur"><img src="img/metal-immobilier.webp" alt="kontrolshop Immobilier" width="820" height="410" loading="lazy"></div>
+      <div>
+        <span class="pour">Propriétaires d'immeubles à revenus</span>
+        <h3>kontrolshop Immobilier</h3>
+        <p>La gestion locative du triplex au parc complet : logements, baux, loyers et locataires, avec les délais du TAL calculés pour vous.</p>
+        <ul class="liste">
+          <li><b>Baux et renouvellements</b> : colocataires, loyer, services inclus, délais d'avis de modification du TAL et renouvellement en un clic.</li>
+          <li><b>Loyers et retards</b> : loyers du mois générés pour chaque bail, paiements, retards et relevé de compte.</li>
+          <li><b>Avis en PDF</b> : modification, reprise, accès, rappel de retard, état des lieux et reçus, envoyés par courriel avec preuve d'envoi.</li>
+          <li><b>Rendement par immeuble</b> : taxes, assurances, intérêts et réparations face aux loyers perçus.</li>
+          <li><b>Portail des locataires</b> : bail, compte, reçus, documents, demandes de réparation — et relevés 31 préparés en février.</li>
+        </ul>
+        <div class="exemple"><strong>Exemple</strong>Les baux finissent le 30 juin : kontrolshop montre ceux dont l'avis de modification est à envoyer. L'avis part en PDF par courriel à chaque colocataire, la réponse arrive par le portail, et le bail se renouvelle en un clic.</div>
+        <a class="en-savoir" href="/immobilier/">Tout sur kontrolshop Immobilier →</a>
       </div>
     </article>
 
@@ -402,6 +422,7 @@
             <option value="Garage">Garage</option>
             <option value="Ferme">Ferme</option>
             <option value="Copropriété">Copropriété</option>
+            <option value="Immobilier">Immobilier</option>
             <option value="Premium (VR)">Premium (VR)</option>
             <option value="Autre">Autre</option>
           </select>
@@ -428,8 +449,8 @@ document.getElementById("annee").textContent = new Date().getFullYear();
 
 // Onglets des déclinaisons (sans JavaScript, toutes les fiches s'affichent)
 const onglets = [...document.querySelectorAll('[role="tab"]')];
-const couleurs = { garage: "var(--garage)", ferme: "var(--ferme)", copropriete: "var(--copro)", premium: "var(--premium)" };
-const libelles = { garage: "Garage", ferme: "Ferme", copropriete: "Copropriété", premium: "Premium (VR)" };
+const couleurs = { garage: "var(--garage)", ferme: "var(--ferme)", copropriete: "var(--copro)", immobilier: "var(--immo)", premium: "var(--premium)" };
+const libelles = { garage: "Garage", ferme: "Ferme", copropriete: "Copropriété", immobilier: "Immobilier", premium: "Premium (VR)" };
 function choisir(id, focus) {
   onglets.forEach(o => {
     const actif = o.id === "t-" + id;
