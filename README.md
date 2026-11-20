@@ -28,6 +28,9 @@ Ouvrir `index.html` dans le navigateur, tout simplement.
   (`application/ld+json` : logiciel, fil d'Ariane, FAQ). Une nouvelle page
   s'ajoute aussi à `sitemap.xml`. Garder la FAQ des données structurées
   pareille au texte affiché.
+- **Après une modification de `styles.css`** : changer la version dans le
+  lien `/styles.css?v=…` de toutes les pages, sinon les navigateurs gardent
+  l'ancien style en mémoire.
 - **Démo présélectionnée** : `/?secteur=garage|ferme|copropriete|immobilier|premium#contact`.
 - **Couleurs des déclinaisons** : variables `--garage`, `--ferme`, `--copro`,
   `--premium` en haut de `styles.css` — garder celles de `lib/marque.js`.
