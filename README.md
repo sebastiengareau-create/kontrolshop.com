@@ -10,6 +10,8 @@ garage/ ferme/ copropriete/ immobilier/ vr/   une page par déclinaison (référ
 styles.css     style commun à toutes les pages
 img/           logos métal des déclinaisons (WebP), logo, icônes
 robots.txt, sitemap.xml
+404.html       page « introuvable » (ErrorDocument dans .htaccess), noindex
+favicon.ico    icône demandée d'office par les navigateurs et Google
 .github/workflows/publier.yml   publication chez WHC
 .htaccess      HTTPS et www obligatoires, cache (hébergement Apache de WHC)
 ```

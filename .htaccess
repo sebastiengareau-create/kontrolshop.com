@@ -5,6 +5,9 @@ RewriteCond %{HTTPS} off [OR]
 RewriteCond %{HTTP_HOST} ^kontrolshop\.com$ [NC]
 RewriteRule ^ https://www.kontrolshop.com%{REQUEST_URI} [L,R=301]
 
+# Page d'erreur pour les adresses qui n'existent pas (statut 404 gardé)
+ErrorDocument 404 /404.html
+
 AddType image/webp .webp
 AddType image/svg+xml .svg
 
