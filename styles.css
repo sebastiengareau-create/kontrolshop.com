@@ -182,3 +182,42 @@ textarea{min-height:96px;resize:vertical}
 @media (max-width:760px){.autres{grid-template-columns:1fr}}
 .en-savoir{display:inline-flex;align-items:center;gap:.4em;margin-top:16px;color:var(--c);font-weight:700;text-decoration:none}
 .en-savoir:hover{text-decoration:underline}
+
+/* Prix et comparaison */
+.nav a[aria-current="page"]{color:var(--texte)}
+.hero-court{padding:56px 0 16px}
+.tarifs-section{padding-top:32px}
+.tarifs{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px}
+.tarif{--c:var(--accent);display:flex;flex-direction:column;background:var(--carte);border:1px solid var(--ligne);border-top:3px solid var(--c);border-radius:var(--rayon);padding:24px}
+.tarif h2{font-size:1.45rem;margin:0}
+.tarif .pour{color:var(--c);font-weight:700;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;margin:.3em 0 1.1em}
+.tarif .montant{margin:0}
+.tarif .montant b{display:block;font-size:2.2rem;font-weight:800;letter-spacing:-.02em;line-height:1.1}
+.tarif .montant span{color:var(--doux);font-size:.88rem}
+.tarif .montant b.sur-demande{font-size:1.7rem}
+.tarif .liste{font-size:.92rem;color:var(--doux);margin:1.3em 0 1.5em;gap:10px}
+.tarif .btn{justify-content:center;margin-top:auto}
+.tarif .en-savoir{justify-content:center;font-size:.92rem}
+.note-prix{color:var(--pale);font-size:.88rem;margin:16px 0 0;max-width:820px}
+.defile{overflow-x:auto;margin-top:28px;-webkit-overflow-scrolling:touch}
+.comp{width:100%;border-collapse:collapse;min-width:620px;font-size:.95rem}
+.comp th,.comp td{text-align:left;padding:14px 12px;border-bottom:1px solid var(--ligne);vertical-align:top}
+.comp thead th{font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;color:var(--pale);font-weight:700}
+.comp thead th.nous{color:var(--accent)}
+.comp tbody th{font-weight:650}
+.comp td{color:var(--doux)}
+.comp .montant-col{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums;color:var(--texte);font-weight:700}
+.comp tr.nous{background:color-mix(in srgb,var(--accent) 10%,transparent)}
+.comp-fonctions td{font-size:.9rem}
+.comp .oui{color:var(--texte)}
+.comp .oui::before{content:"✓ ";color:#3ccf6e;font-weight:800}
+.comp .non{color:var(--pale)}
+.comp .option{color:var(--doux)}
+.comp sup a{color:var(--accent);text-decoration:none}
+.appel .btn + .btn{margin-left:8px}
+.sources-section{padding:40px 0 64px}
+.petit-titre{font-size:1.1rem}
+.sources{color:var(--doux);font-size:.9rem;padding-left:1.2em}
+.sources li{margin-bottom:.4em}
+.sources a{color:var(--texte)}
+@media (max-width:520px){.appel .btn + .btn{margin:10px 0 0}}

@@ -7,6 +7,8 @@ un peu de JavaScript, sans dépendance ni compilation). À part de l'appli
 ```
 index.html     page d'accueil (onglets des déclinaisons, formulaire de démo)
 garage/ ferme/ copropriete/ immobilier/ vr/   une page par déclinaison (référencement)
+prix/          prix de chaque déclinaison, options, mise en route offerte
+comparaison/   kontrolshop face à Gem-car, Sage 50 et Odoo (coût sur 3 ans, fonctions)
 styles.css     style commun à toutes les pages
 img/           logos métal des déclinaisons (WebP), logo, icônes
 robots.txt, sitemap.xml
@@ -33,6 +35,9 @@ Ouvrir `index.html` dans le navigateur, tout simplement.
 - **Après une modification de `styles.css`** : changer la version dans le
   lien `/styles.css?v=…` de toutes les pages, sinon les navigateurs gardent
   l'ancien style en mémoire.
+- **Prix des concurrents** (`comparaison/`) : relevés à la date indiquée sur
+  la page, avec leurs sources. Les revérifier avant chaque modification de la
+  page et mettre la date à jour : une publicité comparative doit être exacte.
 - **Démo présélectionnée** : `/?secteur=garage|ferme|copropriete|immobilier|premium#contact`.
 - **Couleurs des déclinaisons** : variables `--garage`, `--ferme`, `--copro`,
   `--premium` en haut de `styles.css` — garder celles de `lib/marque.js`.
