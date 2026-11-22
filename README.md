@@ -44,7 +44,7 @@ Ouvrir `index.html` dans le navigateur, tout simplement.
 - **Logos** : générés depuis `public/marque/kontrolshop-metal-<secteur>.png`
   du dépôt `sgwebsite` :
   `convert … -resize 820x -strip -quality 82 img/metal-<secteur>.webp`.
-- **Courriel de contact** : `info@sgwebsite.online` (3 endroits dans
+- **Courriel de contact** : `info@kontrolshop.com` (4 endroits dans
   `index.html`). Le formulaire ouvre le logiciel de courriel du visiteur,
   déjà rempli — pas de serveur à entretenir.
 

@@ -29,7 +29,7 @@
   "name": "kontrolshop",
   "url": "https://www.kontrolshop.com/",
   "logo": "https://www.kontrolshop.com/img/apple-touch-icon.png",
-  "email": "info@sgwebsite.online",
+  "email": "info@kontrolshop.com",
   "slogan": "Tout est sous kontrol.",
   "areaServed": {
    "@type": "AdministrativeArea",
@@ -407,9 +407,9 @@
         <span class="surtitre">Démonstration gratuite</span>
         <h2>Voyez kontrolshop avec votre réalité.</h2>
         <p class="intro">Dites-nous qui vous êtes et ce que vous voulez simplifier. On vous revient rapidement pour planifier une démonstration.</p>
-        <p style="color:var(--doux)">Ou écrivez-nous directement : <a href="mailto:info@sgwebsite.online">info@sgwebsite.online</a></p>
+        <p style="color:var(--doux)">Ou écrivez-nous directement : <a href="mailto:info@kontrolshop.com">info@kontrolshop.com</a></p>
       </div>
-      <form id="formulaire" action="mailto:info@sgwebsite.online" method="post" enctype="text/plain">
+      <form id="formulaire" action="mailto:info@kontrolshop.com" method="post" enctype="text/plain">
         <div class="deux">
           <label>Votre nom<input name="nom" autocomplete="name" required></label>
           <label>Entreprise<input name="entreprise" autocomplete="organization"></label>
@@ -486,7 +486,7 @@ document.getElementById("formulaire").addEventListener("submit", e => {
     "Courriel : " + f.get("courriel"), "Téléphone : " + f.get("telephone"),
     "Secteur : " + f.get("secteur"), "", f.get("message")
   ].join("\n");
-  location.href = "mailto:info@sgwebsite.online?subject=" + encodeURIComponent("Démo kontrolshop — " + f.get("secteur")) + "&body=" + encodeURIComponent(corps);
+  location.href = "mailto:info@kontrolshop.com?subject=" + encodeURIComponent("Démo kontrolshop — " + f.get("secteur")) + "&body=" + encodeURIComponent(corps);
 });
 </script>
 </body>
